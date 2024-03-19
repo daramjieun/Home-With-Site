@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>HOME LIFE</title>
+    <meta name="description" content="홈 라이프는 언제나 당신의 공간과 일상을 함께 합니다." />
+    <meta name="author" content="JIEUN LEE" />
+    <meta name="keyword" content="홈라이프" />
+    <!-- Open Graph-->
+    <meta property="og:title" content="홈 라이프" />    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="배포후 생성된 URL" />
+    <meta property="og:image" content="배포후에 생성된 이미지" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="smooth">
+    <header id="headerType" class="header__wrap">
+        <div class="header__inner">
+            <div class="header__logo">
+                <div><a href="#">HOME <em>with</em></a></div>
+            </div>
+            <nav class="header__menu"> <!--메뉴는 nav 태그 사용-->
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">집꾸미기</a></li>
+                    <li><a href="#">이달의 추천</a></li>
+                    <li><a href="#">라이프 스타일</a></li>
+                    <li><a href="#">집들이</a></li>
+                </ul>
+            </nav>
+            <div class="header__member">
+                <a href="">로그인</a>
+            </div>
+        </div>       
+    </header>
+    <section id="sliderType" class="slider__wrap">
+        <h2 class="blind">홈 페이지 소개</h2> <!--접근성을 위해 h2 태그 작성/ -->
+        <div class="slider__inner">
+            <div class="slider">
+                <div class="slider__img">
+                    <div class="slider__img__desc">
+                        <span>LIFE STYLE</span>
+                        <h3>ALL ABOUT HOME OF LIFE</h3>
+                        <p>
+                            매일 아침을 열고 밤을 닫는 공간<br />
+                            당신의 공간과 일상을 함께 합니다.
+                        </p>
+                        <div class="slider__img__btn">
+                            <a href="#">자세히 보기</a>
+                            <a class="black" href="#">사이트 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cardType" class="card__wrap section">
+        <h2>라이프 스타일</h2>
+        <p>
+            취향이 묻어나는 공간!<br />
+            나에게 맞는 라이프 스타일 구경하기
+        </p>
+        <div class="card__inner container">
+            <article class="card">
+                <figure class="card__header">    <!--이미지 태그 이용할 때는 figure 태그 사용-->
+                    <img src="./img/life/simple.jpg" alt="미니멀 라이프">
+                </figure>
+                <div class="card__body">
+                    <h3 class="tit">미니멀 라이프</h3>
+                    <p class="desc">심플하지만 필요한 건 갖춘 미니멀 라이프. 작지만 소소한 행복을 추구하는 라이프 구경하실래요?</p>
+                    <a class="btn" href="#" title="미니멀 라이프 구경가기">구경가기</a>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="card__header">    
+                    <img src="./img/life/modern.jpg" alt="모던 라이프">
+                </figure>
+                <div class="card__body">
+                    <h3 class="tit">모던 라이프</h3>
+                    <p class="desc">고급스러움에 심플함을 더한 모던 라이프. 현대적인 감성이 물씬 느껴지는 라이프 구경하실래요?</p>
+                    <a class="btn" href="#" title="모던 라이프 구경가기">구경가기</a>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="card__header">    
+                    <img src="./img/life/nature.jpg" alt="내추럴 라이프">
+                </figure>
+                <div class="card__body">
+                    <h3 class="tit">내추럴 라이프</h3>
+                    <p class="desc">따뜻함이 묻어나는 자연스러운 내추럴 라이프. 꾸민 듯 꾸미지 않은 자연스러운 라이프 구경하실래요?</p>
+                    <a class="btn" href="#" title="내추럴 라이프 구경가기">구경가기</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="imgTextType" class="imgText__wrap section">
+        <h2 class="blind">집 꾸미기 용품 구경하기</h2> <!--접근성 -->
+        <div class="imgText__inner container">
+            <div class="imgText__txt">
+                <span class="small">집 꾸미기</span> <!--이름 충돌이 일어날 수 있기 때문에 class 붙여준다.-->
+                <h3 class="title">집 꾸미기 용품 구경하기</h3>  <!--복잡한 사이트 아니기 때문에 class명은 짧게--> 
+                <p class="desc">
+                    분위기만 바꿨을 뿐인데!<br />
+                    소품과 셀프 인테리어로 다른 집 만들기
+                </p>
+                <ul class="list">
+                    <li><a href="#">방용품</a></li>
+                    <li><a href="#">수납용품</a></li>
+                    <li><a href="#">거실용품</a></li>
+                    <li><a href="#">베란다용품</a></li>
+                    <li><a href="#">주방용품</a></li>
+                    <li><a href="#">셀프 인테리어</a></li>
+                </ul>
+            </div>
+            <div class="imgText__img img1">
+                <a href="#">집 꾸미기</a>
+            </div>
+            <div class="imgText__img img2">
+                <a href="#" class="dark">셀프 인테리어</a>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section id="imageType" class="image__wrap section">
+        <h2>이번 달 추천</h2>
+        <p>공간별 가구 구경하기</p>
+        <div class="image__inner container">
+            <article class="image img1">
+                <h3 class="image__title">침실 가구</h3>
+                <p class="image__desc">포근하게 잠들고 개운하게 깨어나는 일상을 위한 다양한 공간 구경하실래요???????????????????????????????????????????????????????????????????</p>
+                <a class="image__btn" href="#">구경가기</a>
+            </article>
+            <article class="image img2">
+                <h3 class="image__title">거실 가구</h3>
+                <p class="image__desc">포근하게 잠들고 개운하게 깨어나는 일상을 위한 다양한 공간 구경하실래요????????????????????????????????????????????????????????????</p>
+                <a class="image__btn" href="#">구경가기</a>
+            </article>
+        </div>
+    </section>
+    <section id="bannerType" class="banner__wrap section">
+        <h2 class="blind">배너 영역</h2>
+        <div class="banner__inner">
+            <h3 class="title">EVERYDAY WITH EVERYONE</h3>
+            <p class="desc">
+                당신의 공간과 일상을 함께 만들어 갑니다.
+                <a href="https://youtu.be/MV9kclfajk8?si=vKSGBdU0oY2gRtHn" target="_blank" title="페이지 이동">www.homesweethome.com</a>
+            </p>
+            <span class="small">LIFE WITH US</span>
+        </div>
+    <section id="textType" class="text__wrap section">
+        <span>집들이</span>  <!--공통 스타일링이 아니라서 span 사용-->
+        <h2>카테고리별 집들이</h2>
+        <div class="text__inner container">
+            <div class="text t1">
+                <h3 class="text__title">홈데코</h3>
+                <p class="text__desc">
+                    무엇으로 집을 꾸몄는지에 따라 분위기는 달라집니다. 
+                    연출에 따라서 밋밋했던 공간이 멋지게 변신! 
+                    다양한 사람들의 집에 방문하여 어떻게 활용하여 꾸몄는지 살펴볼까요?
+                </p>
+                <a class="text__btn" href="#">보러가기</a>
+            </div>
+            <div class="text t2">
+                <h3 class="text__title">조명</h3>
+                <p class="text__desc">
+                    조명에 따라 달라지는 집의 분위기.
+                    거실과 방 그리고 화장실까지! 조명이 주는 효과는 굉장히 큽니다. 
+                    어떤 조명을 활용했는지 살펴볼까요?
+                </p>
+                <a class="text__btn" href="#">보러가기</a>
+            </div>
+            <div class="text t3">
+                <h3 class="text__title">식물</h3>
+                <p class="text__desc">
+                    식물 하나 뒀을 뿐인데 생기가 도는 우리 집!
+                    반려 식물이라는 말도 생겼습니다. 
+                    어떤 식물을 어떻게 관리하는지 살펴볼까요?
+                </p>
+                <a class="text__btn t4" href="#">보러가기</a>
+            </div>
+            <div class="text t4">
+                <h3 class="text__title">수납/정리</h3>
+                <p class="text__desc">
+                    집을 꾸미는 거만큼 수납공간도 굉장히 중요합니다. 
+                    공간을 어떤 식으로 활용해서 수납과 정리를 하는지 살펴볼까요?
+                </p>
+                <a class="text__btn" href="#">보러가기</a>
+            </div>    
+            <div class="text t5">
+                <h3 class="text__title">침구</h3>
+                <p class="text__desc">
+                    의식주만큼 중요한 건 수면! 
+                    그리고 수면 환경에도 영향을 주는 침구!
+                    어떤 침구를 사용하는지 살펴볼까요?
+                </p>
+                <a class="text__btn" href="#">보러가기</a>
+            </div>
+            
+            <div class="text t6">
+                <h3 class="text__title">가구</h3>
+                <p class="text__desc">
+                    어떤 가구를 어떻게 배치했냐에 따라서 집의 분위기는 달라집니다.
+                    공간을 크게 차지하는 만큼 신중하게 고르게 되는 가구!
+                    다양한 가구의 디자인과 배치를 살펴볼까요?
+                </p>
+                <a class="text__btn" href="#">보러가기</a>
+            </div>
+        </div>
+    </section>
+    <footer id="footerType" class="footer__wrap section">
+        <h2 class="blind">푸터 영역</h2>
+        <div class="footer__inner container">
+            <div class="footer__menu">
+                <div>
+                    <h3>홈데코</h3>
+                    <ul>
+                        <li><a href="#">인테리어소품</a></li>
+                        <li><a href="#">장식</a></li>
+                        <li><a href="#">식물</a></li>
+                        <li><a href="#">파티용품</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>패브릭</h3>
+                    <ul>
+                        <li><a href="#">침구세트</a></li>
+                        <li><a href="#">커튼</a></li>
+                        <li><a href="#">러그</a></li>
+                        <li><a href="#">매트</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>수납/정리</h3>
+                    <ul>
+                        <li><a href="#">서랍장</a></li>
+                        <li><a href="#">리빙박스</a></li>
+                        <li><a href="#">행거</a></li>
+                        <li><a href="#">수납정리</a></li>
+                        <li><a href="#">선반</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>조명</h3>
+                    <ul>
+                        <li><a href="#">천장등</a></li>
+                        <li><a href="#">스탠드</a></li>
+                        <li><a href="#">무드등</a></li>
+                        <li><a href="#">벽조명</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>가구</h3>
+                    <ul>
+                        <li><a href="#">침대</a></li>
+                        <li><a href="#">테이블/책상/식탁</a></li>
+                        <li><a href="#">의자</a></li>
+                        <li><a href="#">소파</a></li>
+                        <li><a href="#">진열장</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>셀프 인테리어</h3>
+                    <ul>
+                        <li><a href="#">페인트</a></li>
+                        <li><a href="#">벽지/ 장판</a></li>
+                        <li><a href="#">인테리어 도구</a></li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="forter__right">
+                JIEUN LEE © 2023 All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,460 @@
+/* Common */
+.smooth {
+    transition: 1s;
+    scroll-behavior: smooth;
+}
+.container {        /* 영역과 위치와 잡기 */
+    width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.section {          /* 여백 주기*/
+    padding: 120px 0 0 0;
+}
+.blind {        /* 접근성을 위해 작성: 리더기가 읽어주지만 사용자 눈에는 보이지 않게 설정 */
+    width: 0;   /* 영역 차지하지 않게 크기, 위치 설정 */
+    height: 0;
+    line-height: hidden;
+    position: absolute;
+    text-indent: -9999px;
+}
+.section > h2 {     /* > 표시는 바로 밑에 자식 h2, p만 해당*/
+    font-size: 50px;
+    font-weight: 400;   
+    line-height: 1;     /* 한 줄은 line-height: 1 주는 것이 좋다.*/
+    text-align: center;     /* h2랑 p 가운데 정렬하고 싶다. 하지만 section에 text-align:center를 */
+    margin-bottom: 10px;    /* 주면 자식 요소 전부 상속 받아서 가운데 배치되기 떄문에 문제가 된다. */
+}                      
+.section > p {      /* section 자식 p */
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #666;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section span {
+    display: block; /* span에서 text-align 안먹히는 이유는 영역 자체가 콘첸츠 크기라서*/
+    text-align: center; /* 때문에 display: block으로 바꿔줘야 이동된다.*/
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    
+}
+.section h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* 헤더 */
+.header__inner {
+    height: 70px;
+    display: flex;  /* 수평 정렬 */
+    justify-content: space-between;
+    align-items: center;   
+    padding: 0 50px;
+    font-weight: 400;
+}
+
+/* 헤더 로고 */
+.header__logo {
+    font-size: 30px;
+    text-transform: uppercase; /* 대문자로 */
+    width: 20%; /* 공간 차지 비율*/
+}
+.header__logo a {
+    font-weight: 500;
+}
+.header__logo em {  /* a 태그 작성 생략 가능 */
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* 헤더 메뉴 */
+.header__menu {
+    width: 60%;
+}
+.header__menu ul{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.header__menu a {   /* ul과 li 태그 생략 가능 */
+    padding: 10px 30px;
+    transition: background-color 0.3s;
+}
+.header__menu a:hover {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+.header__member {
+    width: 20%;
+    text-align: right;
+}
+.header__member a {
+    font-size: 16px;
+    border: 1px solid #000;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+/* 슬라이더 */
+.slider {
+    position: relative;
+}
+.slider__img {
+    background: url(img/home.jpg) no-repeat center center / cover; /* 한번에 작성 */
+    width: 100%;
+    height: 580px;
+}
+.slider__img__desc {
+    width: 1160px; /*너비*/
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+.slider__img__desc span {
+    font-size: 16px;
+    background-color: #f1f1f1;
+    padding: 0 10px 1px 10px;
+    border-radius: 50px;
+    text-transform: uppercase; /*대문자*/
+    margin-bottom: 10px;    /* span은 inline이기 때문에 margin이 먹히지 않는다.*/
+    display: inline-block; /* 그렇기 때문에 inline-block으로 바꿔준다.*/
+}
+.slider__img__desc h3 {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.slider__img__desc p {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #f1f1f1;
+    margin-bottom: 130px;
+}
+.slider__img__btn a {
+    font-size: 16px; /* 모든 브라우저의 폰트 사이즈 16px이기 때문에 안넣어줘도 된다.*/
+    background-color: #f1f1f1;
+    padding: 10px 50px;
+    border-radius: 30px;
+    transition: all 0.4s;
+}
+.slider__img__btn .black {
+    background-color: #0e0e0e;
+    color: #f1f1f1;
+    margin-left: 4px;
+}
+.slider__img__btn a:hover {
+    background-color: rgba(242, 242, 242, 0.8);
+}
+.slider__img__btn .black:hover {
+    background-color: rgb(13, 13, 13, 0.8);
+}
+
+/* 이달의 추천 -이미지 */
+.image__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.image {
+    width: 49%;         /* 각각 이미지 부모의 49% 크기*/
+    height: 370px;
+    border-radius: 10px;
+    padding: 180px 30px 30px 30px;
+    color: #f1f1f1;
+}
+.image.img1 {
+    background: url(./img/month/month1.jpg) no-repeat center / cover;
+}
+.image.img2 {
+    background: url(./img/month/month2.jpg) no-repeat center / cover;
+}
+.image__title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.image__desc {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    padding-right: 100px;
+    overflow: hidden;       /* 두줄 효과 */ 
+    text-overflow: ellipsis;    /* 넘치면...으로*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 2줄로 */
+    -webkit-box-orient: vertical;
+}
+.image__btn {
+    font-size: 16px;
+    background-color: #f2f2f2;
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+.image__btn:hover {
+    background-color: rgba(242, 242, 242, 0.9);
+}
+
+.imgText__inner {   
+    display: flex;
+    justify-content: space-between;
+}
+.imgText__inner > div { /* 하위 자식 div 태그 가리킴, 바로 하위 태그만 적용할 때 > 사용 */
+    width: 32%;
+    height: 500px;
+}
+
+/* 홈 꾸미기 */
+.imgText__txt .small {
+    font-size: 16px;
+    color: #666;
+    text-decoration: underline;
+    margin-bottom: 20px; /* span 인라인 구조라서 안 먹힘*/
+    display: block; /* block 또는 inline-block으로 설정하기 */
+}
+.imgText__txt .title {
+    font-size: 50px;
+    font-weight: 300;
+    word-break: keep-all; /* 단어 끊어준다. */
+    line-height: 1.4;   /*line-height 1.4 넣어주기..*/
+    margin-bottom: 20px;
+}
+.imgText__txt .desc {
+    font-size: 20px;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.imgText__txt .list { /* 여기서 color 바꾸려고 하면 안 바뀐다. 왜냐하면 a 태그 때문에*/
+    font-size: 20px;    /* a 태그는 직접 태그에 color 줘야한다. */
+    font-weight: 300; 
+    line-height: 1.8; 
+}
+.imgText__txt .list li a {   
+    color: #666;
+    transition: all 0.33s;
+
+}
+.imgText__txt .list li a:hover {
+    border-bottom: 1px solid #000;
+    color: #000000;
+}
+.imgText__txt .list li {
+    position: relative;
+    padding-left: 20px;
+}
+.imgText__txt .list li::before { /* 가상 요소 */
+    content: '';      /* li 앞에 콘텐츠 넣어줌 */
+    width: 5px;     /* 넣을 내용 */
+    height: 5px;
+    background: #666;
+    border-radius: 50%;
+    position: absolute; /*가상 요소 넣을 위치 지정 */
+    left: 5px;
+    top: 16px;
+}
+
+/* 홈 꾸미기- 이미지 */
+.imgText__img {
+    border-radius: 10px;
+    position: relative; /* position absolut 기준점 */
+}
+.imgText__img a {
+    background-color: #efefef;
+    color: #0e0e0e;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 30px; /* a태그는 인라인 구조이기 때문에 글씨를 기준으로 정렬된다.*/
+    display: inline-block; /* 때문에 display: inline-block으로 바꿔준다.*/
+    position: absolute; /* 조상 중에 static이 아닌 relative를 기준으로 */
+    left: 30px;
+    bottom: 30px;
+}
+.imgText__img a.dark {
+    background-color: #0e0e0e;
+    color: #efefef;
+}
+.imgText__img.img1 {    /*  이름 붙여써야 한다.*/
+    background: url(./img/deco/homedeco1.jpg) no-repeat center / cover;
+}
+.imgText__img.img2 {
+    background: url(./img/deco/homedeco2.jpg) no-repeat center / cover;
+}
+
+/* 라이프 스타일 */
+.card__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    width: 32%;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+.card__header > img {
+    border-radius: 10px 10px 0 0;
+}
+.card__body {
+    padding: 24px;
+}
+.card__body .tit {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.card__body .desc {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #666;
+    margin-bottom: 30px;
+}
+.card__body .btn {
+    font-size: 16px;
+    color: #efefef;
+    background-color: #0e0e0e;
+    padding: 5px 16px 6px 16px;
+    border-radius: 30px;
+    transition: background-color 0.33s;
+}
+.card__body .btn:hover {
+    color: #0e0e0e;
+    background-color: rgba(202, 202, 202, 0.9);
+}
+
+/* 배너 */
+.banner__wrap {
+    width: 100%;
+}
+.banner__inner {
+    background: url(img/banner.jpg) no-repeat center / cover;
+    color: #0e0e0e;
+    text-align: center;
+    padding: 120px 0;
+}
+.title {
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.desc {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+.desc a {
+    display: block;
+    font-weight: 300;
+} 
+.small {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+/* 집들이 */
+.text__inner {
+    display: flex;
+    flex-wrap: wrap; /* 넘치면 다음 줄로 */
+    justify-content: space-between;
+}
+.text {
+    width: 32%; /* 부모 박스의 32% 크기, 박스 너비 조절해서 박스 나열 */
+    background-color: #f5f5f5;
+    margin-bottom: 2%; /* 간격 띄우기 */
+    padding: 20px 20px 32px 20px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+.text:hover {
+    background-color: rgb(217, 217, 217, 0.5);
+}
+.text__title {
+    font-size: 24px;
+    line-height: 1;
+    color: #0e0e0e;
+    margin: 10px;
+    white-space: nowrap;   /* 두줄이 되는 것을 한줄로 바꿔주는 효과*/
+    overflow: hidden;   /* 넘치면 숨김 */
+    text-overflow: ellipsis; /* 넘치면 ... 으로*/
+    padding-top: 75px;
+    position: relative;
+}
+.text__title::before {
+    content: '';
+    position: absolute; /*상위 박스 기준*/
+    left: 0; /* 위치 지정 */
+    top: 0;
+    width: 60px;
+    height: 60px; /* 크기 지정*/
+    background: url(img/text_icon.svg);
+}
+.text.t1 .text__title::before {
+    background-position: 0 0;
+}
+.text.t2 .text__title::before {
+    background-position: -60px 0;
+}
+.text.t3 .text__title::before {
+    background-position: -120px 0;
+}
+.text.t4 .text__title::before {
+    background-position: -180px 0;
+}
+.text.t5 .text__title::before {
+    background-position: -240px 0;
+}
+.text.t6 .text__title::before {
+    background-position: -360px 0;
+}
+.text__desc {
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.4;
+    margin: 10px;
+    overflow: hidden;   /* 3줄 줄임 */
+    text-overflow: ellipsis;    
+    display: -webkit-box;   
+    -webkit-line-clamp: 3;  
+    -webkit-box-orient: vertical;
+}
+.text__btn {
+    font-size: 16px;
+    line-height: 1;
+    border-bottom: 2px solid #0e0e0e;
+    margin-left: 10px;
+    }
+
+/* 푸터 */
+.footer__menu {
+    display: flex;
+    margin-bottom: 70px;
+}
+.footer__menu > div {  /* 푸터 메뉴 바로 하위의 div*6 */
+    width: 16%;
+}
+.footer__menu h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.footer__menu li a {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px; /* a 태그 인라인 구조기 때문에 안 먹힘 */
+    display: block; /* 그렇기 때문에 block화 시켜줘야 한다.*/
+}
+.forter__right {
+    border-top: 1px solid #d9d9d9;
+    padding: 40px 0 120px 0;
+    text-align: center;
+    color: #666;
+}
